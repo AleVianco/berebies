@@ -1,0 +1,201 @@
+/*
+RESET CSS
+https://www.youtube.com/watch?v=Foieq2jTajE
+*/
+/*Variables Generales*/
+:root {
+    --color-principal: #B658AA;
+    --font-principal:"Libre Franklin", sans-serif;
+    --font-secundaria:Verdana;
+  }
+
+  .libre-franklin-200 {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+        --negro:#ececec;
+        --blanco:#000000;
+    }
+}
+@media (prefers-reduced-motion:reduce){
+    *{
+        -webkit-animation: none !important;
+            animation: none !important;
+        -webkit-transition: none !important;
+        transition: none !important;    
+    }
+}
+/*RESETEOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    vertical-align: baseline;    
+}
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+        object-fit: cover;
+    -o-object-position:center center;
+        object-position: center center;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+p a{
+    display: inline;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+blockquote::before, blockquote::after, q::before, q::after{
+    content: "";
+    content: none;
+}
+::-moz-selection{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+::selection{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+        hyphens: auto;
+    background-color: transparent;
+    display: block;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+svg{
+    width:100%;
+    display: block;
+    fill:currentColor;
+}
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    font-smooth: always;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+
+
+
+
+
+
+/*Código*/
+.header{
+    width: 100%;
+    background-color: var(--color-principal);
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+}
+
+/*.header .h1{
+     background-color: aqua; 
+}*/
+/*.header .a{}*/
+
+.header .button{
+    /* background-color: crimson; */
+    display: none;
+}
+/*Botón Hamburger*/
+.header .svg{
+    width: 2em;
+    height: 2em;
+    fill: azure;
+}
+
+/* .header .nav{
+     background-color: bisque; 
+} */
+.header .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .li{
+    margin:0 .5em;
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+}
+
+
+/************************MEDIA QUERIES MENU**************************/
+@media screen and (max-width:480px){
+    .header{
+        justify-content: space-between;
+    }
+    .header .h1 .a img{
+        width: 40px;
+    }
+    .header .button{
+        display: block;
+        cursor: pointer;
+    }
+    .header .nav{
+        width: 100%;
+        /* display: none; */
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.activo{
+        /* display: block; */
+        height: 50vh;
+        pointer-events: auto;
+    }
+    .header .ul{
+        flex-direction: column;
+        font-family: var(--font-principal);
+    }
+    .header .li{
+        margin:1rem 0;
+        font-size: 1rem;
+    }
+}

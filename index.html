@@ -3,82 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeReBiEs - Home Page</title>
-    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+    <!-- <link rel="stylesheet" href="/css/app.css"> -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <script defer src="/js/app.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.png" alt="Logo BeReBiEs" width="10%"></a>
-        <h1>Centro de Belleza</h1>
-
+    <!--Menú copiado de https://www.youtube.com/watch?v=_M0K_q617Kc-->
+    <header class="header">
+        <h1 class="h1">
+            <a href="index.html" class="a"><img src="/img/logo.png" alt="Logo Berebies"></a>
+        </h1>
+        <button class="button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
+        <nav class="nav activo">
+            <ul class="ul">
+                <li class="li"><a href="index.html">Inicio</a></li>
+                <li class="li"><a href="promociones.html">Promociones</a></li>
+                <li class="li"><a href="acerca-de.html">Acerca de</a></li>
+                <li class="li"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="tratamientos.html">Tratamientos</a></li>
-                <ul>
-                    <li><a href="tratamientos_faciales.html">Tratamientos Faciales</a></li>
-                    <li><a href="podologia.html">Podología</a></li>
-                </ul>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="acerca_de_berebies.html">Acerca de</a></li>
-            <li><a href="contacto.html">Contacto</a><i class="fa-solid fa-user"></i>
-        </ul>
-    </nav>
+    
 
     <main>
-        <section class="fondos">
-            <h2>Home Page</h2>
-            <h2 id="segundoh2"> Complete el formulario:</h2>
-            <form action="colecta.html">
-                <!--componente-->
-                <fieldset>
-                    <legend>Datos de contacto</legend>
-                    <input type="text" placeholder="nombre" maxlength="20">
-                    <input type="text" placeholder="apellido"> <br><br>
-                    <input type="email" placeholder="correo">
-                    <input type="password" placeholder="password">   
-                    <p> Indica tu tipo de piel para recibir asesoramiento:</p><br>
-                    <select name="" id="">
-                    <option value="grasa">piel grasa</option>
-                    <option value="mixta">piel mixta</option>
-                    <option value="seca">piel seca</option>
-                    <option value="no estoy seguro/a">no estoy seguro/a</option>
-                    </select>                    
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </fieldset>    
-            </form>
-        </section>
-        <section>
-            <h3>Prueba git</h3>
+        <div class="caja-principal">
+            <h1>Centro de Belleza y Salud</h1>
+            <div class="padre-cards">
+                <section class="card2">
+                    <div class="caja-titulo2">
+                        <h2 class="h2">Tratamientos</h2>
+                        <img src="/img/tratamientos.jpeg" alt="foto de tratamientos">
+                    </div>
+                    <p>Ideal una vez al mes: Limpieza profunda - Peeling - Dermapen - Fangoterapia - Punta de diamantes - Hidratación en piernas y/o espalda y muchos tratamientos más.  
+                        <br>¿Te gustaría conocerlos?
+                    </p>
+                    <a href="tratamientos.html" class="btn">Más info</a>
+                </section>
+                <section class="card2">
+                    <div class="caja-titulo2">
+                        <h2 class="h2">Podología</h2>
+                        <img src="/img/podologia.jpeg" alt="foto de podologia">
+                    </div>
+                    <p>Son los grandes olvidados de nuestro cuerpo y, en muchas ocasiones, no se les presta la atención que requieren. <br>
+                        Limpieza y exfoliación de pies y uñas. 
+                        Reflexología Podal
+                    </p>
+                    <a href="podologia.html" class="btn">Más info</a>
+                </section>
+                <section class="card2">
+                    <div class="caja-titulo2">
+                        <h2 class="h2">Masajes</h2>
+                        <img src="/img/masajes.jpeg" alt="foto de masajes">
+                    </div>
+                    <p>Masaje descontracturante y relajante. 
+                        Antiestrés. Sedativo.                    
+                        Masaje circulatorio. Drenaje linfático manual.                    
+                        Reflexología. Masajes reductores.                     
+                        Tratamientos de estética.
+                    </p>
+                    <a href="masajes.html" class="btn">Más info</a>
+                </section>
+                <section class="card2">
+                    <div class="caja-titulo2">
+                        <h2 class="h2">Productos</h2>
+                        <img src="/img/productos.jpeg" alt="foto de productos">
+                    </div>
+                    <p>Florencia te va a guiar en la búsqueda de tu rutina de cuidado facial ideal. Gracias a sus herramientas, te va a brindar recomendaciones personalizadas y consejos para conseguir una piel sana.
+                    </p>
+                    <a href="productos.html" class="btn">Más info</a>
+                </section>
+            
+            </div>
+            
+<!--             
+            <div class="caja-h1">
+              <h1>Centro de Belleza y Salud</h1>
+            </div>
+            <div class="caja-padre">
+              <div class="card">
+                <div class="caja-titulo">
+                  <h2>Tratamientos</h2>
+                  <img src="https://dummyimage.com/300x300/000/fff">
+                </div>
+                <div class="card-body">
+                  <p>
+                    Ideal una vez al mes:
+                    Limpieza profunda - Peeling - Dermapen - Fangoterapia - Punta de diamantes - Hidratación en piernas y/o espalda y muchos tratamientos más. <br> ¿Te gustaría conocerlos?
+                  </p>
+                  <a href="tratamientos.html" class="btn">Más info</a>
+                </div>
+              </div>
+      
+              <div class="card">
+                <div class="caja-titulo">
+                  <h2>Podología</h2>
+                  <img src="https://dummyimage.com/300x300/000/fff">
+                </div>
+                <div class="card-body">
+                  <p>
+                    Son los grandes olvidados de nuestro cuerpo y, en muchas ocasiones, no se les presta la atención que requieren. <br>
+                    Limpieza y exfoliación de pies y uñas. 
+                    Reflexología Podal
 
-        </section>
-
-        <section class="fondos">
-            <!--Acá irá el video-->
-            <article>
-                <h2>Nota del mes</h2>
-                <iframe width="400" height="250" src="https://www.youtube.com/embed/WaRjjIkTFIA?si=s9v1-f7uXhJ9H3k0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-        </section>
+                  </p>
+                  <a href="podologia.html" class="btn">Más info</a>
+                </div>
+              </div>
+      
+              <div class="card">
+                <div class="caja-titulo">
+                  <h2>Masajes</h2>
+                  <img src="https://dummyimage.com/300x300/000/fff">
+                </div>
+                <div class="card-body">
+                  <p>
+                    Masaje descontracturante y relajante. 
+                    Antiestrés. Sedativo.                    
+                    Masaje circulatorio. Drenaje linfático manual.                    
+                    Reflexología. Masajes reductores.                     
+                    Tratamientos de estética.
+                  </p>
+                  <a href="masajes.html" class="btn">Más info</a>
+                </div>
+              </div>
+      
+              <div class="card">
+                <div class="caja-titulo">
+                  <h2>Productos</h2>
+                  <img src="https://dummyimage.com/300x300/000/fff">
+                </div>
+                <div class="card-body">
+                  <p>
+                    Florencia te va a guiar en la búsqueda de tu rutina de cuidado facial ideal. Gracias a sus herramientas, te va a brindar recomendaciones personalizadas y consejos para conseguir una piel sana.
+                  </p>
+                  <a href="productos.html" class="btn">Más info</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
     </main>
 
-    <footer>
 
-    </article>
-    <!--Acá irá el mapa-->
-            <article>
-                <h2>Encontranos en</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0653152560685!2d-58.395069724476365!3d-34.60393985750959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bb6651f1%3A0x269b819dac9bc748!2sAv.%20Callao%20420%2C%20C1022AAR%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1727575036787!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            </article>
-        <p><a href="https://www.instagram.com/berebies_ok/" target="_blank">Instagram</a></p>
-        <p><a href="https://maps.app.goo.gl/LV32FUDjJA3oUoADA" target="_blank"> Av. Callao 420, 10º D, CABA</a></p>
 
+    <footer class="footer">
+        <section class="bloque-direccion">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2>Av. Callao 420 10º D - C.A.B.A. - </h2><span class="ver-mapa"><a href="https://www.google.com/maps/place/Av.+Callao+420,+C1022AAR+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6039399,-58.3950697,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac1bb6651f1:0x269b819dac9bc748!8m2!3d-34.6039443!4d-58.3924948!16s%2Fg%2F11c882n9pk?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Ver Mapa</a></span>
+        </section>
+        <section class="redes">
+            <p class="nuestras-redes">Nuestras redes sociales</p>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/berebies/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>  
+                <a href="mailto:berebiesbsas@yahoo.com">
+                  <i class="fa-regular fa-envelope"></i>
+                </a> 
+                <a href="https://www.instagram.com/berebies_ok/" target="_blank">  
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5491126858522" target="_blank">
+            <span class="texto-wa">(+54 911) 2685-8522</span>
+          </a>
+        </section>
     </footer>
-
+    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>

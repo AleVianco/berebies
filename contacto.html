@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
+    <title>BeReBiEs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles-form.css">
+    <!-- <i class="fa-solid fa-bars"></i> -->
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo BeReBiEs"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <!--MAPA-->
+            <section class="mapa">
+                <h2 class="encontranos">Encontranos en</h2>
+                <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0653152560685!2d-58.395069724476365!3d-34.60393985750959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bb6651f1%3A0x269b819dac9bc748!2sAv.%20Callao%20420%2C%20C1022AAR%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1727575036787!5m2!1ses-419!2sar" width="480" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <!--FORMULARIO DE CONTACTO-->
+            <section class="formulario">
+                <form action="colecta.html" method="post">
+                    <h1 class="titulo-formulario">Contacto</h1>
+                <h2 class="envianos">Envianos tu consulta</h2>
+                <input type="name" placeholder="Ingresá tu Nombre" maxlength="30" class="elemento-formulario">
+                <input type="email" placeholder="Ingresá tu E-mail" class="elemento-formulario">
+                <input type="phone" placeholder="Ingresá tu Teléfono" class="elemento-formulario" maxlength="20">
+                <textarea rows="5" placeholder="Realizá tu Consulta" class="textarea-formulario"></textarea>
+                <div class="agrupador-formulario-piel">
+                    <label class="piel" for="piel">Indicá tu tipo de piel</label>
+                    <select name="Indica tu tipo de piel" class="sel-piel">
+                        <option value="Normal">Normal</option>
+                        <option value="Seca">Seca</option>
+                        <option value="Grasa o Mixta">Grasa o Mixta</option>
+                        <option value="No lo sé">No lo sé</option>
+                    </select>
+                </div>
+                <div class="agrupador-formulario">
+                    <input type="reset" value="Borrar" class="boton-reset">
+                    <input type="submit" value="Enviar" class="boton-enviar">
+                </div>
+                </form>
+            </section>
+            
+
+        </div>
+<!--         
+        <div class="caja-principal caja-descripcion contenedor-formulario">
+            <form action="colecta.html" class="caja-formulario-contacto">
+                <h1 class="titulo-formulario">Contacto</h1>
+                <h2 class="titulo-formulario">Envianos tu consulta</h2>
+                <input type="name" placeholder="Nombre" maxlength="30" class="elemento-formulario">
+                <input type="email" placeholder="E-mail" class="elemento-formulario">
+                <input type="phone" placeholder="Teléfono" class="elemento-formulario">
+                <textarea rows="5" placeholder="Consulta" class="elemento-formulario"></textarea>
+                <div class="agrupador-formulario">
+                    <label class="piel" for="piel">Indica tu tipo de piel</label>
+                    <select name="Indica tu tipo de piel" class="elemento-formulario">
+                        <option value="Normal">Normal</option>
+                        <option value="Seca">Seca</option>
+                        <option value="Grasa o Mixta">Grasa o Mixta</option>
+                        <option value="No lo sé">No lo sé</option>
+                    </select>
+                </div>
+                <div class="agrupador-formulario">
+                    <input type="submit" value="Enviar" class="boton-formulario elemento-formulario">
+                    <input type="reset" value="Borrar" class="boton-formulario elemento-formulario">
+                </div>
+            </form>
+
+            <article>
+                <h2 class="encontranos">Encontranos en</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0653152560685!2d-58.395069724476365!3d-34.60393985750959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1bb6651f1%3A0x269b819dac9bc748!2sAv.%20Callao%20420%2C%20C1022AAR%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1727575036787!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </article>
+        </div> -->
+
+
+    </main>
+
+    <footer class="footer">
+        <section class="bloque-direccion">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2>Av. Callao 420 10º D - C.A.B.A. - </h2><span class="ver-mapa"><a href="https://www.google.com/maps/place/Av.+Callao+420,+C1022AAR+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6039399,-58.3950697,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac1bb6651f1:0x269b819dac9bc748!8m2!3d-34.6039443!4d-58.3924948!16s%2Fg%2F11c882n9pk?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Ver Mapa</a></span>
+        </section>
+        <section class="redes">
+            <p class="nuestras-redes">Nuestras redes sociales</p>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/berebies/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>  
+                <a href="mailto:berebiesbsas@yahoo.com">
+                  <i class="fa-regular fa-envelope"></i>
+                </a> 
+                <a href="https://www.instagram.com/berebies_ok/" target="_blank">  
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5491126858522" target="_blank">
+            <span class="texto-wa">(+54 911) 2685-8522</span>
+          </a>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
