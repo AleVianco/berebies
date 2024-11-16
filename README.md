@@ -1,0 +1,1 @@
+Usé flex-box, no llegué a usar bootstrap, las páginas que mejor se pueden visualizar por ahora son index y contacto, me falta seguir mejorando las de los distintos tratamientos y productos, promociones y acerca de.
