@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
     <title>BeReBiEs</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+    <!-- <link rel="stylesheet" href="/css/app.css"> -->
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- <i class="fa-solid fa-bars"></i> -->
-     <link rel="stylesheet" href="css/style.css">
+    <script defer src="/js/app.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo BeReBiEs"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="acerca-de.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+    <!--Menú copiado de https://www.youtube.com/watch?v=_M0K_q617Kc-->
+    <header class="header">
+        <h1 class="h1">
+            <a href="index.html" class="a"><img src="/img/logo.png" alt="Logo Berebies"></a>
+        </h1>
+        <button class="button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
+        <nav class="nav activo">
+            <ul class="ul">
+                <li class="li"><a href="index.html">Inicio</a></li>
+                <li class="li"><a href="promociones.html">Promociones</a></li>
+                <li class="li"><a href="acerca-de.html">Acerca de</a></li>
+                <li class="li"><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         </div>
         <div class="caja-descripcion">
@@ -32,12 +41,32 @@
           <h3>Reflexología Podal</h3>
           <p>Produce efecto relajante que ayuda a eliminar el estrés y facilita la relajación física y mental. Estimula la circulación sanguínea y linfática. Potencia el sistema inmunológico. Regula el funcionamiento de los órganos. Equilibra y restituye los niveles de energía. Ayuda a la eliminación de toxinas. Tiene efectos de terapia preventiva. Posee efecto anti-alérgico (alivia dolores). Estimula la creatividad, eleva el nivel de vitalidad y mejora el humor.</p><br><br></div>
     </main>
-
-    <footer>
-        <div class="direccion"> <h3>Av. Callao 420, 10ºD - C.A.B.A.</h3><h3>Ver mapa</h3><i class="fa-solid fa-location-dot"></i></div> 
-        <div class="redes"> <p>Nuestras redes sociales</p> <i class="fa-brands fa-facebook"></i> <i class="fa-regular fa-envelope"></i> <i class="fa-brands fa-instagram"></i></div>
-        <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+    <footer class="footer">
+        <section class="bloque-direccion">
+            <i class="fa-solid fa-location-dot"></i>
+            <h2>Av. Callao 420 10º D - C.A.B.A. - </h2><span class="ver-mapa"><a href="https://www.google.com/maps/place/Av.+Callao+420,+C1022AAR+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6039399,-58.3950697,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac1bb6651f1:0x269b819dac9bc748!8m2!3d-34.6039443!4d-58.3924948!16s%2Fg%2F11c882n9pk?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Ver Mapa</a></span>
+        </section>
+        <section class="redes">
+            <p class="nuestras-redes">Nuestras redes sociales</p>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/berebies/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>  
+                <a href="mailto:berebiesbsas@yahoo.com">
+                  <i class="fa-regular fa-envelope"></i>
+                </a> 
+                <a href="https://www.instagram.com/berebies_ok/" target="_blank">  
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/5491126858522" target="_blank">
+            <span class="texto-wa">(+54 911) 2685-8522</span>
+          </a>
+        </section>
     </footer>
-
+    <script src="https://kit.fontawesome.com/ae00d255d7.js" crossorigin="anonymous"></script>
 </body>
 </html>
