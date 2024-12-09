@@ -15,21 +15,17 @@ body {
     
 }
 header {
-  height: 15%;
-  background-color: rgb(182, 88, 170);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 50px;
+    height: 15%;
+    background-color: rgb(182, 88, 170);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
 }
 a .logo {
-    width: 120px;
+    width: 135px;
     border-radius: 50%;
 
-}
-.menu_bar	{
-	display:none;	
 }
 nav {
     color: azure;
@@ -38,40 +34,25 @@ nav {
     /* justify-content: center; */
 
 }
-nav ul {
+ul {
     display: flex; 
     gap: 10px;
-    overflow:hidden;
-    list-style: none;
+
+
 }
-nav ul li {
+ul li {
     padding: 20px;
-    float: left;
-    
+
 }
-nav ul li a{
-  list-style: none;
-  /* text-align: none; */
-  color: #e3d6e4;
-  font-size: 1.5rem;
-  display: block;
-  text-decoration: none;
-}
-header nav ul li a:hover {
-	background:rgb(177, 64, 83);
-}
-main{
-  height:75%;
-  top:15%;
-  display: flex;
-  flex-direction: column;
+main {
+  height: 75%;
+  
 }
 .caja-principal {
     border-radius: 10px;
     background-color: #ffa1e7;
-    height: 90%;
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     
   }
   .caja-principal-promociones {
@@ -102,45 +83,33 @@ h2.texto-colecta {
   
 .caja-padre {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
   }
   /* .caja-padre img {
     width: 70%;
-
   } */
 .card {
     border-radius: 10px;
-    width: 15%;
+    width: 20%;
     background: #fff;
     border: 2px solid #ccc;
-    height:76%;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     transition: 0.3s;
-    display: flex;
-    flex-direction: column;
   }
   
 .caja-titulo {
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    padding: 1.4rem .4rem;
+    padding: 50px 10px;
     background: linear-gradient(to right, #ffa1e7, #8e1088);
     color: #fff;
   }
-.caja-titulo h2{
-  margin:6px;
-}
+
 .caja-titulo img {
   border-radius: 10px;
-  width: 6rem;
-  height: 6rem;
-  border:1px solid blue;
+  width: 200px;
+  height: 180px;
 }
   
 .card-body {
@@ -238,192 +207,15 @@ article {
 }
 h2.encontranos {
   text-align: center;
-
 }
-footer{
-  height:10%;
-  bottom:0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(182, 88, 170);
-}
-.direccion{
-  display: flex;
-  flex-direction: row;
-  gap:10px;
-  align-items: center;
-}
-.direccion i.fa-solid.fa-location-dot{
-  margin-right: 8px;
-  font-size: 2rem;
-  color: azure;
-}
-.direccion h3{
-  color: azure;
-}
-.direccion h3.ver-mapa{
-  text-decoration: none;
-  color: azure;
-}
-.redes{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap:1.5rem;
-}
-.redes p.nuestras-redes{
-  font-family: "Libre Franklin", sans-serif;
-  color: azure;
-  font-size: 1.5rem;
-}
-.redes .iconos-redes{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap:35px;
-}
-.redes .iconos-redes a{
-  text-decoration: none;
-}
-.redes .iconos-redes a i.fa-brands.fa-facebook,
-.redes .iconos-redes a i.fa-regular.fa-envelope,
-.redes .iconos-redes a i.fa-brands.fa-instagram{
-  text-decoration: none;
-  color: azure;
-  font-size: 1.8rem;
-}
-.whatsapp{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap:25px;
-}
-.whatsapp i.fa-brands.fa-whatsapp{
-    color:azure;
-    font-size: 2.5rem;
-}
-.whatsapp a .texto-wa{
-  font-size: 1.5rem;
-  text-decoration: none;
-  color:azure;
-}
-footer hr{
-  display: none;
-}
-/******************************************/
-/*************MEDIA QUERIES ***************/
-@media screen and (max-width: 640px) {
-  body{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header nav {
-		width:80%;
-		height:100%;
-		left:-100%;
-		margin:0;
-		position: fixed;
-	}
-
-	header nav ul li {
-		display:block;
-		float:none;
-		border-bottom:1px solid azure;
-	}
-
-	.menu_bar {
-		display:block;
-		width:100%;
-		/* background:pink; */
-	}
-
-	.menu_bar .bt-menu {
-		display:block;
-		padding:20px;
-		color:azure;
-		text-decoration:none;
-		font-weight: bold;
-		font-size:25px;
-		-webkit-box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		box-sizing:border-box;
-	}
-
-	.menu_bar span {
-		float:right;
-		font-size:40px;
-	}
-  .caja-principal{
-   width: 85%;
-   margin: 20px auto;
-   height: auto;
-  }
-  .caja-h1 h1{
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  .caja-padre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
-  .caja-padre .card{
-    width: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .caja-padre .card .caja-titulo{
-    width: 100%;
-    padding: .2rem .4rem .4rem .4rem;
-  }
-  .caja-padre .card .caja-titulo h2{
-    font-size: 1.5rem;
-  }
-  .caja-padre .card .card-body{
-    width: 100%;
-  }
-  .caja-padre .card .card-body p{
-    font-size: 1rem;
-    /* width: 80%; */
-    text-align: center;
-  }
-  .caja-titulo h2{
-    font-size: 1rem;
-}
-.caja-titulo img{
-  max-width:350px ;
-}
-footer{
-  margin-top: 30px;
-}
-/* footer hr{
-  display: block;
-} */
-
+footer {
+  height: 10%;
+  bottom: 0;
 }
 
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 1000px) {
+  /* Responsive media queries */
+  
+@media screen and (max-width: 1000px) {
     .card {
       width: 40%;
     }
@@ -446,12 +238,12 @@ footer{
   }
 
   footer {
-    
     background-color: rgb(182, 88, 170);
     color: azure;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 50px;
 }
 .direccion {
   display: flex;
@@ -491,4 +283,4 @@ i.fa-regular.fa-envelope {
 
 .whatsapp .texto-wa {
   color: azure;
-} */
+}
