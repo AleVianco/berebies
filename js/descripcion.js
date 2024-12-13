@@ -1,5 +1,22 @@
 let servicios = []
 
+function onLoadEvent() {
+    cargarServicios()
+    mostrarNewsLetter()
+}
+
+function mostrarNewsLetter() {
+    //let newsLetter = document.getElementById("newsletter")
+    //newsLetter.classList.toggle("show")
+    let myModal = document.getElementById("myModal")
+    myModal.style.display = "block";
+}
+
+function cerrarNewsLetter() {
+    let myModal = document.getElementById("myModal")
+    myModal.style.display = "none";
+}
+
 function cargarServicios() {
     servicios.push({
         id: 1,
@@ -28,9 +45,20 @@ function cargarServicios() {
     console.log(servicios)
 }
 
-function mostrarPopup(nombre) {
-    let popup = document.getElementById("popup-" + nombre)
-    popup.classList.toggle("show")
-    let servicio = servicios.find((servicio) => servicio.nombre === nombre)
-    popup.innerHTML = servicio.descripcion
+function suscribirseNewsletter() {
+    let emailComponent = document.getElementById("email-subscription")
+    sessionStorage.setItem("e-mail", emailComponent.value);
+    cerrarNewsLetter()
 }
+
+function mostrarTooltip(nombre) {
+    let tooltip = document.getElementById("tooltip-" + nombre)
+    tooltip.classList.toggle("show")
+    let servicio = servicios.find((servicio) => servicio.nombre === nombre)
+    tooltip.innerHTML = servicio.descripcion
+}
+
+window.addEventListener("load", (event) => {
+    onLoadEvent()
+  });
+  
