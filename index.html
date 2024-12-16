@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/newsletter.css">
     <!-- <link rel="stylesheet" href="/css/variante_bootstrap.css"> -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="/js/descripcion.js" type="text/javascript"></script>
+    <script src="/js/script-index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                             <img class="foto-card" src="/img/tratamientos.jpeg" alt="foto de tratamientos">
                         </a>
                     </div>
-                    <a onclick="mostrarTooltip('tratamientos')" class="btn popup">
+                    <a id="botonTratamientos" class="btn popup">
                         Más info
                         <span class="popuptext" id="tooltip-tratamientos" />
                     </a>
@@ -66,7 +66,7 @@
                         <a href="podologia.html">
                             <img class="foto-card" src="/img/podologia.jpeg" alt="foto de podologia"></a>
                     </div>
-                    <a onclick="mostrarTooltip('podologia')" class="btn popup">
+                    <a id="botonPodologia" class="btn popup">
                         Más info
                         <span class="popuptext" id="tooltip-podologia" />
                     </a>
@@ -77,7 +77,7 @@
                         <a href="masajes.html">
                             <img class="foto-card" src="/img/masajes.jpeg" alt="foto de masajes"></a>
                     </div>
-                    <a onclick="mostrarTooltip('masajes')" class="btn popup">
+                    <a id="botonMasajes" class="btn popup">
                         Más info
                         <span class="popuptext" id="tooltip-masajes" />
                     </a>
@@ -88,7 +88,7 @@
                         <a href="productos.html">
                             <img class="foto-card" src="/img/productos.jpeg" alt="foto de productos"></a>
                     </div>
-                    <a onclick="mostrarTooltip('productos')" class="btn popup">
+                    <a id="botonProductos" class="btn popup">
                         Más info
                         <span class="popuptext" id="tooltip-productos" />
                     </a>
@@ -122,28 +122,31 @@
                 <span class="texto-wa">(+54 911) 2685-8522</span>
             </a>
         </section>
-        <a class="btn btn-primary skip" onclick="mostrarNewsLetter()">Suscribite y obtené un descuento</a>
+        <a id="botonNewsletter" class="btn btn-primary skip">Suscribite y obtené un descuento</a>
+        <span class="email" id="email"></span>
+        <a id="botonOlvidarEmail" class="basura">
+            <i class="fa-solid fa-trash-can"></i>
+        </a>
     </footer>
     <div id="myModal" class="modal">
         <div class="popup">
-            <a onclick="cerrarNewsLetter()" class="close">&times;</a>
+            <a id="botonCerrarNewsletter" class="close">&times;</a>
             <div id="dialog" class="window">
                 <div class="box">
                     <div class="newletter-title">
-                        <h2>Sign up &amp; Obtené 10% off</h2>
+                        <h2>Registrate y Obtené 10% off</h2>
                     </div>
                     <div class="box-content newleter-content">
-                        <label>Subscribe to our newsletters now and stay up-to-date with new collections, the latest
-                            lookbooks and exclusive offers.</label>
+                        <label>Suscribite ahora a nuestros boletines y mantenete actualizado con las nuevas colecciones y ofertas exclusivas.</label>
                         <div id="frm_subscribe">
                             <div>
                                 <input type="text" id="email-subscription">
-                                <a class="button" onclick="suscribirseNewsletter()"><span>Suscribirme!</span></a>
+                                <a id="botonSuscribirseNewsletter" class="button"><span>Suscribirme!</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 

@@ -765,3 +765,7 @@ h2.texto-colecta {
         font-size: 3rem;
     }
 } */
+
+.basura {
+    cursor: pointer
+}
