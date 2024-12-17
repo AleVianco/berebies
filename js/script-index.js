@@ -112,6 +112,7 @@ function suscribirseNewsletter() {
     let emailComponent = document.getElementById("email-subscription")
     localStorage.setItem("e-mail", emailComponent.value);
     localStorage.setItem("no-repreguntar", true);
+    validateEmail()
     cerrarNewsLetter()
 }
 
@@ -137,3 +138,19 @@ function olvidarEmail() {
 window.addEventListener("load", (event) => {
     onLoadEvent()
 });
+
+async function validateEmail() {
+    let emailInfo = document.getElementById("email-subscription")
+    const url = "https://verifyright.co/verify/" + emailInfo.value + "?token=92928b756e623357b3bd80e8dc90deae8e2638750ae30ce8baf2f9c06c57aeba4051800dbdb254eedefa4d55e6332479";
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const json = await response.json();
+      console.log(json);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
