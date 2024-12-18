@@ -47,6 +47,8 @@ function onLoadEvent() {
     botonOlvidarEmail.addEventListener("click", (event) => {
         olvidarEmail()
     });
+
+    mostrarBandera()
 }
 
 function cargarServicios() {
@@ -154,3 +156,15 @@ async function validateEmail() {
       console.error(error.message);
     }
   }
+
+async function mostrarBandera() {
+    //Accede a la API y consulta datos
+    let response = await fetch('https://get.geojs.io/v1/ip/country.json')
+    let info = await response.json()
+
+    //Obtengo el tag img del html
+    let imageHTML = document.getElementById("flag")
+
+    //Cargo en el src del img la bandera de un CDN con el dato devuelto por la API
+    imageHTML.src = "https://flagcdn.com/60x45/" + info.country.toLowerCase() + ".png"
+}
